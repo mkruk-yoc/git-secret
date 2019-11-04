@@ -22,6 +22,7 @@ and you want to reveal stored secrets, run:
 ```
 $ docker run \
     --rm \
+    -it \
     -v /path/to/your/git/repo/with/secrets:/app \
     -v /home/user/.gnupg:/root/.gnupg \
     -w /app \
